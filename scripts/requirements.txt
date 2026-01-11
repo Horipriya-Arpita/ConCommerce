@@ -1,0 +1,39 @@
+# ConCommerce Scripts Requirements
+# Python 3.10+ required
+
+# ============================================
+# Core Dependencies
+# ============================================
+numpy  # Install any available version (avoids compilation issues)
+pandas>=2.0.0
+tqdm>=4.66.0
+
+# ============================================
+# Vector Database - Pinecone
+# ============================================
+pinecone-client>=3.0.0,<4.0.0
+
+# ============================================
+# OpenAI API
+# ============================================
+openai>=1.0.0
+
+# ============================================
+# HuggingFace / Sentence Transformers
+# ============================================
+sentence-transformers>=2.2.0
+torch>=2.0.0
+transformers>=4.30.0
+
+# ============================================
+# Utilities
+# ============================================
+python-dotenv>=1.0.0
+
+# ============================================
+# Optional: For better performance
+# ============================================
+# Uncomment if you want gRPC support (faster, but more dependencies)
+# pinecone-client[grpc]>=3.0.0
+# grpcio>=1.60.0
+# protobuf>=4.25.0
